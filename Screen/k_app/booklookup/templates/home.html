@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{%block content%}
+
+<style>
+    .form-control {
+        width:550px;
+    }
+    .button-box {
+      text-align: center;
+      margin-top: 20px;
+    }
+</style>
+
+<h1 style="font-size: 60px; color:white;"> Welcome to SIT Library! </h1>
+
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-secondary btn-lg" type="submit">Search</button>
+      </form>
+    </div>
+</nav>
+
+<div class="button-box col-lg-12 d-grid gap-2">
+  <a href="#" class="btn btn-primary px-4 py-5" role="button">Booking Facilities</a>
+  <a href="{% url 'fac_loc' %}" class="btn btn-primary px-4 py-5" role="button">Facilities Location</a>
+  <a href="{% url 'req_lib' %}" class="btn btn-primary px-4 py-5" role="button">Request Librarians</a>
+  <a href="{% url 'faq' %}" class="btn btn-primary px-4 py-5" role="button">FAQ</a>
+</div>
+
+<div class="button-box col-lg-12 d-grid gap-1">
+  <a href="#" class="btn btn-primary" role="button" style="float: left;">Assist Mode</a>
+  <a href="#" class="btn btn-primary" role="button" style="float: right;">Patrol Mode</a>
+</div>
+
+{%endblock%}

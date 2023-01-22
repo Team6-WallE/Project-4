@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<style>
+    .button-box {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .btn {
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+
+<h1 style="font-size: 60px; color:white;"> Which area would you like further assitance?</h1>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary col-lg-12 d-grid gap-1 px-4 py-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Health Science Services
+</button>
+  
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Requested Additional Assistance</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        Ms. Debby R Wegener has been notified. Please wait at the helpdesk.
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+    </div>
+</div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary col-lg-12 d-grid gap-1 px-4 py-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    English
+</button>
+  
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Requested Additional Assistance</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        Ms. Wong Shu Min has been notified. Please wait at the helpdesk.
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+    </div>
+</div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary col-lg-12 d-grid gap-1 px-4 py-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Information and Communication Technology
+</button>
+  
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Requested Additional Assistance</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        Ms. Sarah Ruslan has been notified. Please wait at the helpdesk.
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+    </div>
+</div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary col-lg-12 d-grid gap-1 px-4 py-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Reasearch
+</button>
+  
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Requested Additional Assistance</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        Ms. Zoe Wong has been notified. Please wait at the helpdesk.
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+    </div>
+</div>
+</div>
+
+<div class="button-box col-lg-12 d-grid gap-1">
+    <a href="{% url 'home' %}" class="btn btn-primary" role="button" style="float: left;">Back</a>
+</div>
+
+{%endblock%}

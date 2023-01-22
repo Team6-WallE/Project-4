@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{%block content%}
+
+<style>
+    .button-box {
+      text-align: center;
+      margin-top: 20px;
+    }
+</style>
+
+<h1 style="font-size: 60px; color:white;"> FAQ </h1>
+
+<div class="accordion" id="accordionExample">
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        How can I export my citations from Mendeley into excel with JabRef?
+    </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+        Mendeley cannot export citations into an excel file yet, but there is simple a way around this.
+        <li> Download and install the open source reference manager JabRef http://www.jabref.org/ </li>
+        <li> Export your citations from the Mendeley Desktop as a BibTex (*.bib) file </li>
+        <ul>
+            <li>File</li>
+            <li>Export</li>
+        </ul>
+
+        <li>Open JabRef and import the .bib file</li>
+        <ul>
+            <li>File</li>
+            <li>Import</li>
+        </ul>
+
+        <li>You may have to edit the citations a bit</li>
+        <li>After editing, save as a .csv file from JabRef</li>
+        <ul>
+            <li>File</li>
+            <li>Export</li>
+        </ul>
+
+        <li>Open your new .csv file in excel</li>
+
+    </div>
+    </div>
+</div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        What should I do if I have lost my student card?
+    </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+        You should immediately report the loss or damage of SIT matriculation card to Registrar's Office (Registrar@SingaporeTech.edu.sg), 
+        to prevent unauthorized use of the card and for replacement. 
+        Please also inform the Library, and we will temporarily disabled your SIT card access for borrowing physical materials.  However, 
+        you are still able to borrow materials from the Library, using Facial Recognition at the checkout lane or by getting help at the 
+        service desk.  After you receive the replacement card, please inform the Library to reactivate the card access.
+    </div>
+    </div>
+</div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        How many hours can I book the Discussion Rooms?
+    </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+        The overall maximum quota for each student is 4 hours per week for the Resource Booking System for booking of all facilities in
+        that system, including the library's Discussion Rooms.
+        The quota will be reset every Monday.
+    </div>
+    </div>
+</div>
+</div>
+
+
+<div class="button-box col-lg-12 d-grid gap-1">
+    <a href="{% url 'home' %}" class="btn btn-primary" role="button" style="float: left;">Back</a>
+</div>
+
+{%endblock%}
