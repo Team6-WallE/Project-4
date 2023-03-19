@@ -14,7 +14,7 @@ class MainNode(Node):
         #Creating variables
         self.location_number_ = 0
         self.waypoint_no = 0
-        self.waypoints = [[0.0, 0.0], [-0.5, 1.5], [-0.5, 3.0], [1.0, 2.0], [1.0, 0.5], [0.0, 0.0], [-0.5, 2.0], [0.0, 0.5], [0.0, 3.0]]
+        self.waypoints = [[0.0, 0.0], [-0.5, 0.5], [0.8, 1.5], [0.8, 1.5], [1.0, 0.5], [-0.5, -1.0], [-0.5, 2.0], [0.0, -0.5], [0.0, 2.0]]
         # 4d waypoints
         # self.waypoints = [[0.0, 0.0], [1.0, -1.0], [3.0, 0.0], [5.0, -1.0], [6.0, 0.0], [2.0, -1.0], [4.0, -1.0], [1.0, -1.0], [6.0, -1.0]]
         # Gazebo coordinates
@@ -104,11 +104,11 @@ class MainNode(Node):
         hour = current_time.hour
         minute = current_time.minute
         if self.state_ == 1:      # auto
-            if  minute > 11 and minute < 18: 
+            if  minute > 25 and minute < 32: 
                 self.mode_ = self.assist_mode
                 self.get_logger().info('Assist Mode')
                 self.patrol_start = 0                                   #hour >= 8 and hour < 18:                
-            elif minute >= 18 and minute <= 25:                               #hour >= 20 and hour <= 23:
+            elif minute >= 32 and minute <= 40:                               #hour >= 20 and hour <= 23:
                 if self.goal_source != self.api_goal:
                     if self.patrol_start == 0:
                         self.waypoint_no = 7
@@ -117,6 +117,7 @@ class MainNode(Node):
                         self.patrol_start = 1
                     self.mode_ = self.patrol_mode
                     self.get_logger().info('Patrol Mode')
+
 
     def timer_callback(self):
         if self.mode_ == self.assist_mode:
@@ -141,21 +142,26 @@ class MainNode(Node):
                 #     self.navigation()
 
         elif self.mode_ == self.patrol_mode:
-            if self.assist_human != 1:
-                if self.goal_source == self.no_goal:
-                    self.waypoint_no = 7
-                elif self.goal_status == self.next_goal:
-                    self.waypoint_no = self.waypoint_no + 1
-                    if self.waypoint_no == 9:
+            if self.goal_source != self.crowd_goal:
+                if self.assist_human != 1:
+                    if self.goal_source == self.no_goal:
                         self.waypoint_no = 7
-                self.waypoint_check[self.waypoint_no] = 1
-                self.navigation()
-            elif self.assist_human == 1:
-                self.navigator.cancelTask()
-                self.assist_human = 0
+                    elif self.goal_status == self.next_goal:
+                        self.waypoint_no = self.waypoint_no + 1
+                        if self.waypoint_no == 9:
+                            self.waypoint_no = 7
+                    self.waypoint_check[self.waypoint_no] = 1
+                    self.navigation()
+                elif self.assist_human == 1:
+                    self.navigator.cancelTask()
+                    self.assist_human = 0
             elif self.goal_source == self.crowd_goal:
-                self.waypoint_check[self.waypoint_no] = 1
-                self.navigation()
+                if self.assist_human != 1:
+                    self.waypoint_check[self.waypoint_no] = 1
+                    self.navigation()
+                elif self.assist_human == 1:
+                    self.navigator.cancelTask()
+                    self.assist_human = 0
 
     def navigation_callback(self, msg):
         if msg.data > 0 and msg.data < 5:
@@ -186,10 +192,18 @@ class MainNode(Node):
                             self.status_msg.data = 10
                             self.api_status_publisher_.publish(self.status_msg)
                             self.status_msg.data = 0
-                        self.goal_source = self.no_goal
-                        self.goal_status = self.reached
-                        self.waypoint_check[self.waypoint_no] = 0
-                        self.get_logger().info('Assist goal Reached!')
+                            self.goal_source = self.no_goal
+                            self.goal_status = self.reached
+                            self.waypoint_check[self.waypoint_no] = 0
+                            self.get_logger().info('Assist goal Reached!')
+                        elif self.goal_source == self.crowd_goal:
+                            self.status_msg.data = 11
+                            self.api_status_publisher_.publish(self.status_msg)
+                            self.status_msg.data = 0
+                            self.goal_source = self.no_goal
+                            self.goal_status = self.reached
+                            self.waypoint_check[self.waypoint_no] = 0
+                            self.get_logger().info('Crowd goal Reached!')
                     elif result == TaskResult.FAILED:
                         goal.data = 11
                         self.goal_status = self.failed
