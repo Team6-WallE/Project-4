@@ -17,4 +17,5 @@
 #### This package is used to navigate the robot to the different locations based on the information received through the different topics from the crowd detection cameras, webpage and the cameras on the robot.
 
 ## Human Detection & Crowd Detecton
-### tflite
+### To run the detection scripts, first create a venv, enter the env, then run the get_pi_requirements.sh file to download all necessary libraries.
+#### These 2 folders contain scripts that will publish and subscribe to diffferent ros2 nodes if humans are detected.
