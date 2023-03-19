@@ -14,4 +14,4 @@
 ## Navigation Commander
 
 ### turtlebot3_commander
-#### This package is used to navigate the robot to the different locations based on the information received through the differen topics from the crowd detection cameras, webpage and the cameras on the robot.
+#### This package is used to navigate the robot to the different locations based on the information received through the different topics from the crowd detection cameras, webpage and the cameras on the robot.
