@@ -1,0 +1,4 @@
+Invoking command in '/home/meena/camera_ws/build/web_video_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meena/camera_ws/install/cv_basics:/opt/ros/foxy /usr/bin/cmake --build /home/meena/camera_ws/build/web_video_server -- -j12 -l12
+Invoked command in '/home/meena/camera_ws/build/web_video_server' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meena/camera_ws/install/cv_basics:/opt/ros/foxy /usr/bin/cmake --build /home/meena/camera_ws/build/web_video_server -- -j12 -l12
+Invoking command in '/home/meena/camera_ws/build/web_video_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meena/camera_ws/install/cv_basics:/opt/ros/foxy /usr/bin/cmake --install /home/meena/camera_ws/build/web_video_server
+Invoked command in '/home/meena/camera_ws/build/web_video_server' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meena/camera_ws/install/cv_basics:/opt/ros/foxy /usr/bin/cmake --install /home/meena/camera_ws/build/web_video_server

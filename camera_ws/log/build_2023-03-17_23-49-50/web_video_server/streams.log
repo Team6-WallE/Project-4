@@ -1,0 +1,33 @@
+[0.220s] Invoking command in '/home/meena/camera_ws/build/web_video_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meena/camera_ws/install/cv_basics:/opt/ros/foxy /usr/bin/cmake --build /home/meena/camera_ws/build/web_video_server -- -j12 -l12
+[0.295s] [100%] Built target web_video_server
+[0.304s] Invoked command in '/home/meena/camera_ws/build/web_video_server' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meena/camera_ws/install/cv_basics:/opt/ros/foxy /usr/bin/cmake --build /home/meena/camera_ws/build/web_video_server -- -j12 -l12
+[0.344s] Invoking command in '/home/meena/camera_ws/build/web_video_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meena/camera_ws/install/cv_basics:/opt/ros/foxy /usr/bin/cmake --install /home/meena/camera_ws/build/web_video_server
+[0.353s] -- Install configuration: ""
+[0.353s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/lib/web_video_server/web_video_server
+[0.354s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/include/web_video_server
+[0.354s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/include/web_video_server/h264_streamer.h
+[0.354s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/include/web_video_server/libav_streamer.h
+[0.354s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/include/web_video_server/vp8_streamer.h
+[0.354s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/include/web_video_server/web_video_server.h
+[0.354s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/include/web_video_server/multipart_stream.h
+[0.354s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/include/web_video_server/ros_compressed_streamer.h
+[0.355s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/include/web_video_server/image_streamer.h
+[0.355s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/include/web_video_server/png_streamers.h
+[0.355s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/include/web_video_server/vp9_streamer.h
+[0.356s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/include/web_video_server/jpeg_streamers.h
+[0.357s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/share/ament_index/resource_index/package_run_dependencies/web_video_server
+[0.357s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/share/ament_index/resource_index/parent_prefix_path/web_video_server
+[0.358s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/share/web_video_server/environment/ament_prefix_path.sh
+[0.358s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/share/web_video_server/environment/ament_prefix_path.dsv
+[0.358s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/share/web_video_server/environment/path.sh
+[0.359s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/share/web_video_server/environment/path.dsv
+[0.359s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/share/web_video_server/local_setup.bash
+[0.359s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/share/web_video_server/local_setup.sh
+[0.359s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/share/web_video_server/local_setup.zsh
+[0.359s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/share/web_video_server/local_setup.dsv
+[0.360s] -- Installing: /home/meena/camera_ws/install/web_video_server/share/web_video_server/package.dsv
+[0.361s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/share/ament_index/resource_index/packages/web_video_server
+[0.361s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig.cmake
+[0.362s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig-version.cmake
+[0.363s] -- Up-to-date: /home/meena/camera_ws/install/web_video_server/share/web_video_server/package.xml
+[0.363s] Invoked command in '/home/meena/camera_ws/build/web_video_server' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meena/camera_ws/install/cv_basics:/opt/ros/foxy /usr/bin/cmake --install /home/meena/camera_ws/build/web_video_server

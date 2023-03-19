@@ -1,0 +1,24 @@
+[0.655s] Invoking command in '/home/meena/camera_ws/src/cv_basics': PYTHONPATH=/home/meena/camera_ws/build/cv_basics/prefix_override:/home/meena/camera_ws/install/cv_basics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/cv_basics build --build-base /home/meena/camera_ws/build/cv_basics/build install --record /home/meena/camera_ws/build/cv_basics/install.log --install-scripts $base/lib/cv_basics --single-version-externally-managed
+[0.857s] running egg_info
+[0.857s] writing ../../build/cv_basics/cv_basics.egg-info/PKG-INFO
+[0.858s] writing dependency_links to ../../build/cv_basics/cv_basics.egg-info/dependency_links.txt
+[0.858s] writing entry points to ../../build/cv_basics/cv_basics.egg-info/entry_points.txt
+[0.858s] writing requirements to ../../build/cv_basics/cv_basics.egg-info/requires.txt
+[0.858s] writing top-level names to ../../build/cv_basics/cv_basics.egg-info/top_level.txt
+[0.889s] reading manifest file '../../build/cv_basics/cv_basics.egg-info/SOURCES.txt'
+[0.890s] writing manifest file '../../build/cv_basics/cv_basics.egg-info/SOURCES.txt'
+[0.890s] running build
+[0.890s] running build_py
+[0.891s] copying cv_basics/webcam_sub.py -> /home/meena/camera_ws/build/cv_basics/build/lib/cv_basics
+[0.891s] running install
+[0.891s] running install_lib
+[0.892s] copying /home/meena/camera_ws/build/cv_basics/build/lib/cv_basics/webcam_sub.py -> /home/meena/camera_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics
+[0.893s] byte-compiling /home/meena/camera_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics/webcam_sub.py to webcam_sub.cpython-38.pyc
+[0.895s] running install_data
+[0.895s] running install_egg_info
+[0.897s] removing '/home/meena/camera_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics-0.0.0-py3.8.egg-info' (and everything under it)
+[0.897s] Copying ../../build/cv_basics/cv_basics.egg-info to /home/meena/camera_ws/install/cv_basics/lib/python3.8/site-packages/cv_basics-0.0.0-py3.8.egg-info
+[0.898s] running install_scripts
+[0.913s] Installing img_subscriber script to /home/meena/camera_ws/install/cv_basics/lib/cv_basics
+[0.913s] writing list of installed files to '/home/meena/camera_ws/build/cv_basics/install.log'
+[0.931s] Invoked command in '/home/meena/camera_ws/src/cv_basics' returned '0': PYTHONPATH=/home/meena/camera_ws/build/cv_basics/prefix_override:/home/meena/camera_ws/install/cv_basics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/cv_basics build --build-base /home/meena/camera_ws/build/cv_basics/build install --record /home/meena/camera_ws/build/cv_basics/install.log --install-scripts $base/lib/cv_basics --single-version-externally-managed
