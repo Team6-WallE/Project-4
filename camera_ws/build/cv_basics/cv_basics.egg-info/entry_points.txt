@@ -1,0 +1,3 @@
+[console_scripts]
+img_subscriber = cv_basics.webcam_sub:main
+
